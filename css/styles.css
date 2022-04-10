@@ -152,7 +152,7 @@ header {
 .hero {
   background-color: var(--second-bgc);
   text-align: center;
-  padding: 200px 0 280px;
+  padding: 200px 0 200px;
   background-size: cover;
 }
 .hero-title {
@@ -221,7 +221,7 @@ header {
   padding-bottom: 94px;
 }
 .work-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .work-list {
   display: flex;
@@ -298,15 +298,13 @@ header {
   background-color: var(--focuse-color);
   color: var(--second-text-color);
 }
-/* FLEX for portfolio filter-buttons */
 .filter-buttons {
   display: flex;
   justify-content: center;
   margin-right: -8px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
-.filter-button {
-  flex-basis: calc(100% / 5 - 32px);
+.filter-buttons-item:not(:last-child) {
   margin-right: 8px;
 }
 /* END FLEX for portfolio filter-buttons */
@@ -315,24 +313,22 @@ header {
   background-color: var(--main-bgc);
 }
 .portfolio-positions-item {
-  padding-bottom: 20px;
   border-bottom: 1px solid #eeeeee;
-}
-.portfolio-position-photo{
-  padding-bottom: 20px;
 }
 .portfolio-positions .portfolio-position-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding: 0 24px 4px;
+  margin-bottom: 4px;
+}
+.portfolio-position-discription{
+  padding: 20px 24px;
 }
 .portfolio-positions .portfolio-position-text {
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.88;
-  padding: 0 24px;
 }
 /* FLEX for portfolio positions list  */
 .portfolio-positions{
@@ -364,7 +360,7 @@ header {
   line-height: 1.71;
 }
 .address-link:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .footer-logo {
   margin-bottom: 20px;
